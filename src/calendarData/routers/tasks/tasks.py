@@ -10,7 +10,7 @@ from celery.schedules import crontab
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from database import get_db, SessionLocal
-from calendarData.models import Event
+from src.calendarData.models import Event
 from fastapi_mail import FastMail, MessageSchema, MessageType, ConnectionConfig 
 from starlette.background import BackgroundTasks
 
