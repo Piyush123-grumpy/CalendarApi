@@ -23,7 +23,7 @@ class Settings:
     # default postgres port is 5432
     POSTGRES_PORT: str = os.getenv("POSTGRES_PORT", "5432")
     POSTGRES_DB: str = os.getenv("POSTGRES_DB", "tdd")
-    POSTGRES_DATABASE_URL = "postgres://calendaruser123:JDQpOZy5GD5MN9oaCnl12p15IOsiuzg1@dpg-cp6ohuvsc6pc73ckcang-a.singapore-postgres.render.com/calendaruser123"
+    POSTGRES_DATABASE_URL:str = os.getenv('DATA_BASE_URL','postgres://calendaruser123:JDQpOZy5GD5MN9oaCnl12p15IOsiuzg1@dpg-cp6ohuvsc6pc73ckcang-a.singapore-postgres.render.com/calendaruser123')
 
     # MySQL settings
     MYSQL_USER: str = os.getenv("MYSQL_USER")

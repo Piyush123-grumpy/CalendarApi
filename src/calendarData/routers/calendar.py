@@ -7,7 +7,7 @@ router = APIRouter(
     prefix='/calendarData',
     tags=['calendarData'],
 )
-from database import get_db
+from src.database import get_db
 from sqlalchemy.orm import Session
 import dateutil.parser as dt
 
